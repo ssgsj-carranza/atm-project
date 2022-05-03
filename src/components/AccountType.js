@@ -7,7 +7,9 @@ const AccountType = () => {
   return (
     <div>
         <hr />
-        <h1 className="is-size-3 has-text-link has-text-centered">{isSavingAccount ? 'Saving Account' : 'Checking Account'}</h1>
+        <h1 className={`is-size-3 has-text-link has-text-centered ${isSavingAccount ? 'has-text-danger' : 'has-text-link'}`}>
+            {isSavingAccount ? 'Saving Account' : 'Checking Account'}
+        </h1>
     </div>
   )
 }
