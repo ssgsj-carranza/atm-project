@@ -19,3 +19,4 @@ root.render(
 //npx tailwindcss init
 // npm install redux react-redux bulma
 // npm install node-sass
+// npm install redux-devtools-extension

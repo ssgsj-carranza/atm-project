@@ -4,7 +4,7 @@ const initialState = {
 }
 
 export const bankingReducer = (state, action) => {
-    switch (key) {
+    switch (action.type) {
         default: 
             return state
     }

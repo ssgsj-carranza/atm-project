@@ -1,4 +1,5 @@
-import {createdStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import { bankingReducer } from './reducers/bankingReducer';
+import {composeWithDevTools} from 'redux-devtools-extension';
 
-export const store = createdStore(bankingReducer)
+export const store = createStore(bankingReducer, composeWithDevTools(applyMiddleware()))
