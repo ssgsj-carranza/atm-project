@@ -5,7 +5,7 @@ export const deposit = amount => {
     }
 }
 
-export const widthdraw = amount => {
+export const withdraw = amount => {
     return {
         type: 'WITHDRAW',
         payload: amount,

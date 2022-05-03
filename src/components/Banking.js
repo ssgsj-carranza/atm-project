@@ -14,13 +14,17 @@ const Banking = () => {
         dispatch(deposit(+amount))
     }
 
+    const handleWithdraw = () => {
+        dispatch(withdraw(+amount))
+    }
+
   return (
     <div>
         <div className="field">
             <input type='number' className='input' placeholder='Enter amount' value={amount} onChange={handleChange}/>
         </div>
         <button className='button mr-2 is-success' onClick={handleDeposit}>Deposit</button>
-        <button className='button mr-2 is-danger'>Withdraw</button>
+        <button className='button mr-2 is-danger' onClick={handleWithdraw}>Withdraw</button>
         <button className='button mr-2 is-link'>Collect Interest</button>
         <button className='button mr-2 is-info'>Account Type</button>
         <button className='button mr-2 is-warning'>Deactivate Account</button>
