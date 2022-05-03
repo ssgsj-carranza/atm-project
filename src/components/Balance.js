@@ -2,10 +2,10 @@ import React from 'react';
 import {useSelector} from 'react-redux';
 
 const Balance = () => {
-    const state = useSelector(state => {
+    const state = useSelector(({auth, banking}) => {
         return {
-            balance: state.balance,
-            interest: state.interest,
+            balance: banking.balance,
+            interest: banking.interest,
         }
     });
 

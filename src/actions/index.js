@@ -29,3 +29,9 @@ export const toggleAccount = () => {
         type: 'TOGGLE',
     }
 }
+
+export const toggleLogIn = () => {
+    return {
+        type: 'IS_LOGGED_IN',
+    }
+}
