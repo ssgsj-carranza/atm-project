@@ -16,7 +16,7 @@ export const bankingReducer = (state = initialState , action) => {
             }
         case 'COLLECT_INTEREST':
             return {
-                ...state, interest: state.balance * 0.3
+                ...state, interest: (state.balance * 0.3).toFixed(2)
             }
         case 'DELETE_ACCOUNT':
             return {
